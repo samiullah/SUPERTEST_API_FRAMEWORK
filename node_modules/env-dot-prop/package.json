@@ -1,0 +1,73 @@
+{
+  "version": "3.0.0",
+  "name": "env-dot-prop",
+  "description": "Get, set, or delete nested properties of process.env using a dot path",
+  "license": "MIT",
+  "homepage": "https://github.com/simonepri/env-dot-prop#readme",
+  "repository": "github:simonepri/env-dot-prop",
+  "bugs": {
+    "url": "https://github.com/simonepri/env-dot-prop/issues",
+    "email": "simonepri@outlook.com"
+  },
+  "author": "Simone Primarosa <simonepri@outlook.com> (https://simoneprimarosa.com)",
+  "contributors": [
+    "Simone Primarosa <simonepri@outlook.com> (https://simoneprimarosa.com)"
+  ],
+  "keywords": [
+    "env-dot-prop",
+    "dot-prop",
+    "env-config",
+    "env-configs",
+    "env-configr",
+    "env-configuration",
+    "env-configurator",
+    "config",
+    "configs",
+    "configr",
+    "configuration",
+    "configurator",
+    "env",
+    "environment"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "lint": "xo",
+    "test": "nyc ava",
+    "release": "npx np",
+    "update": "npx npm-check -u"
+  },
+  "dependencies": {
+    "dot-prop": "^5.2.0"
+  },
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "nyc": "^15.1.0",
+    "xo": "~0.27.2"
+  },
+  "ava": {
+    "verbose": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcovonly",
+      "text"
+    ]
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "rules": {
+      "object-shorthand": "off",
+      "prefer-rest-params": "off",
+      "camelcase": "off",
+      "prefer-destructuring": "off",
+      "prefer-object-spread": "off"
+    }
+  }
+}

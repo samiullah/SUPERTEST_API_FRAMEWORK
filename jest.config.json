@@ -1,0 +1,11 @@
+{"reporters": [
+	"default",
+	["./node_modules/jest-html-reporter", {
+		"pageTitle": "Spenmo Api Test Report",
+        "includeFailureMsg": true,
+        "includeConsoleLog": true
+	}]
+],
+"testTimeout": 30000
+
+}
